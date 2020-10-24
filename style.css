@@ -1,0 +1,681 @@
+/*Zajednički CSS IZBORNIK*/
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+
+}
+
+.embed-responsive {
+  padding: 0;
+}
+
+.embed-responsive-16by9::before {
+  padding: 0 !important;
+}
+
+body {
+  margin: 0;
+  font-family: 'Courgette', cursive;
+}
+
+nav{
+  width:100%;
+  overflow: hidden;
+  background-color: #333;
+  display:inline-block;
+  position: relative;
+}
+
+nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav a{
+  color:#f2f2f2; 
+  font-size:17px; 
+  padding: 14px 16px; 
+  display:inline-block; 
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+  float: right;
+
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+   transition: all 0.5s ease 0s;
+}
+
+.toggle-menu ul{
+  display:table; 
+  width:25px;
+}
+.toggle-menu ul li{
+  width:100%; 
+  height:7px; 
+  background-color:#fff; 
+  margin-bottom:4px;
+}
+.toggle-menu li:last-child{
+  margin-bottom:0px;
+}
+
+input[type=checkbox], label{display:none;}
+
+.izbornik{
+  width:100%;
+  height: auto;
+  max-width: 1380px;
+  margin: 0 auto;
+  position: fixed;
+  margin-bottom: 20px;
+}
+
+.logo img, .logo6 img, .logok img, .logou img, .logokk img{
+  width:200px;
+  height:120px;
+  position:absolute;
+  transform: translate(-50%,-30%);
+  position: none;
+}
+
+.logo img{
+  top: 50%;
+  left:9%;
+  padding-top: 30px;
+}
+
+.logo6 img{
+  top: 50%;
+  left:7%;
+  padding-top: 10px;
+}
+
+.logok img{
+  top: 50%;
+  left:12%;
+  padding-top:10px;
+}
+
+.logou img{
+  top: 50%;
+  left:12%;
+  padding-top:10px;
+}
+
+.logokk img{
+  top: 50%;
+  left:12%;
+  padding-top:10px;
+}
+
+@media only screen and (max-width:600px) {
+  .logo img, .logo6 img, .logou img, .logok img,.logokk img {
+    width: 40%;
+    padding-left: 35px;
+  }
+}
+
+@media only screen and (max-width: 980px) {
+  input[type=checkbox] {position: fixed; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+label {float:right; padding:8px 0px; display:inline-block; cursor:pointer; }
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav{display:none; position:fixed; right:0px; top:80px; background-color:#333; padding:0px; z-index:99;}
+nav a{color:white; font-size:15px; padding:10px 10px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+}
+
+/*Zajednički CSS kod FOOTER*/
+
+.footer{
+    width:100%;
+    min-height:50px;
+    display: block;
+    background-color:#333;
+}
+
+.footer p{
+    text-align: center;
+    padding: 20px;
+    font-weight: 3px;
+    color:white;
+}
+
+@media only screen and (max-width:600px) {
+ .footer {
+    width: 100%;
+  }
+}
+
+
+/*Glavni container*/
+.container{
+    width:100%;
+    max-width: 1380px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width:600px) {
+  .container {
+    width: 100%;
+  }
+}
+
+
+/*Uređivanje glavne stranice= INDEX */
+
+.header{
+    width:100%;
+    min-height:400px;
+    background:url("img/slika17.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: block;
+}
+
+.header h1,.header h3,.header p{ 
+    font-family: 'Kaushan Script', handwriting;
+}
+
+.header h1{
+    text-align: center;
+    padding-top: 135px;
+    padding-left: 65px;
+}
+
+.header h3{
+    text-align: right;
+    padding-right: 506px;
+}
+
+.header p{  
+ text-align: right;
+    padding-right: 206px;
+    font-size: 18px;
+
+}
+
+#last {
+  margin: 20px 420px 20px 420px !important;
+}
+
+.info {
+    border: 2px solid rgba(0,0,255,0.3);
+    border-radius: 50px;
+    float: left;
+    width: 297px;
+    padding: 10px;
+    min-height: 300px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-slika{
+  margin-top: 50px;
+  margin-bottom: 20px;
+  width: 125px;
+  height: 118px;
+  text-align: center;
+}
+
+
+.info h2{ 
+    font-family: 'Kaushan Script', handwriting;
+    text-align: center;
+}
+
+.opis{
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 15px;
+    padding-left: 35px;
+    margin-left: 15px;
+
+}
+
+.pozadina{
+    width:100%;
+    min-height:350px;
+    background:url("img/slika18.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    display:inline-block;
+}
+
+
+.onama, .ikone{ 
+ float: left;
+ width: 40%;
+}
+
+.onama{
+    background:rgb(0,0,0,0.2);
+    border-radius: 25px 20px 25px 20px;
+    min-height:270px;
+    margin-left:3px;
+    margin-top:3px;
+}
+
+.tekst{
+  text-align: left;
+  padding-left:3px;
+}
+.onama h1{
+    text-align: center;
+     font-family: 'Kaushan Script', handwriting;
+}
+
+.onama p{
+     font-family: 'Rubik', sans-serif;
+   
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 60px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+   border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.ikone{
+  display: block;
+}
+.ikone p{
+  text-align: center;
+  padding-left: 50px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .info,.onama, .ikone, .header{
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+ .header h3{
+    padding-right: 110px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+ .header p{
+    padding-right: 140px;
+  }
+}
+
+
+
+/*CSS kod podstranice USLUGE*/
+
+ .nav-usluge{
+  width:10%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+  display:block;
+  position: fixed;
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.nav-usluge a:hover {
+  background-color: #ddd;
+}
+
+.nav-usluge a{
+  color:white; 
+  font-size:17px; 
+  padding: 14px 16px; 
+  display:inline-block; 
+  transition: all 0.5s ease 0s;
+  text-decoration: none;
+  float: left;
+
+}
+
+.usluge {
+    float: left;
+    width: 33%;
+    padding: 10px;
+    min-width: 270px;
+    display: inline-block;
+    text-align: center; 
+   padding-top: 60px;
+}
+
+.usluge h3{
+  padding-top: 50px;
+   font-family: 'Kaushan Script', handwriting;
+   font-size: 23px;
+}
+
+.usluge p{
+  padding-left: 10px;
+     font-family: 'Rubik', sans-serif;
+}
+
+.usluge a{
+  text-decoration: none;
+  color: #000;
+}
+
+.usluge a:hover{
+  text-decoration: underline;
+}
+
+.usluge h4{
+  text-align: right;
+}
+
+.slika8, .slika9, .slika10, .slika7{
+    vertical-align: middle;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .usluge{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-usluge{
+    width: 40%;
+    margin-top:40px;
+  }
+}
+
+/*CSS kod podstranice KATALOG*/
+
+.red {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  padding-top: 60px;
+
+}
+
+.row:after, .row1:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .red{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.kartica {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom:10px;
+  cursor: pointer;
+}
+
+.kartica img{
+  width:90%;
+  height: 290px;
+}
+
+.collapsible {
+  margin:0 auto;
+    color: black;
+    cursor: pointer;
+    padding: 11px;
+    width: 50%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 19px;
+}
+
+.collapsible:active {
+    background-color:#f1f1f1;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+
+.content p a{
+  text-decoration: none;
+  color: #04047F;
+  font-style: italic;
+}
+
+.content p a:hover{
+  text-decoration: underline;
+}
+
+.content p a:hover, .content p a:active{
+  font-size:110%;
+}
+
+/*CSS kod podstranice CJENIK*/
+
+.tablica{
+  width:80%;
+  margin:0 auto;
+  margin-top: 10px;
+  padding-top: 60px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable td{
+  font-family: 'Rubik', sans-serif;
+}
+
+#myTable th{
+ font-family: 'Kaushan Script', handwriting;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.table-boja, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.vodic,.dodatno {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.dodatno h2{
+  text-align: center;
+  font-family: 'Kaushan Script', handwriting;
+}
+.dodatno p{
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+}
+
+.dodatno{
+  background:rgb(0,0,0,0.1);
+    border-radius: 25px 20px 25px 20px;
+    min-height: 190px;
+    margin-top: 25px;
+
+}
+
+.container h4{
+  text-align: right;
+  padding-right: 30px;
+  color: black;
+}
+
+.container h4 a{
+  color: black;
+  text-decoration: none;
+}
+
+.container h4 a:hover{
+  text-decoration: underline;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .dodatno{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/*CSS kod podstranice KONTAKT*/
+
+.kontakt {
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 30px 10px 30px 10px;
+   margin-top: 60px;
+
+}
+
+.kontakt, .kontakt-tekst {
+    float: left;
+    width: 48%;
+    padding-left: 20px;
+
+}
+
+ input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+label{
+  font-family: 'Kaushan Script', handwriting;
+}
+
+.kontakt-tekst{
+  margin-top: 170px;
+  min-height: 150px;
+  padding-top: 35px;
+  background:rgb(0,0,0,0.1);
+  border-radius: 25px 20px 25px 20px;
+}
+
+.karta{
+  width: 100%;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  .kontakt{
+    width: 90%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .kontakt-tekst{
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .karta iframe{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
