@@ -1,5 +1,5 @@
  <?php
-
+ 
 // os and user 
 function os() {
     $what = 
@@ -183,7 +183,7 @@ function os() {
     $what = 
     '<div class="text-align-center">' .
     '<div class="ml-3 mb-4">' .  
-                shell_exec('wmic diskdrive get moder') .
+                shell_exec('wmic diskdrive get model') .
       '</div>' . 
       '<div class="ml-3 mb-4">' .  
                  shell_exec('wmic diskdrive get index') .
@@ -265,3 +265,29 @@ function os() {
     echo '</pre>';
     }
 // Function to get the client IP address
+
+
+// Get latitude and longitude
+$get_loc = get_loc();
+
+$coo = (explode(':', $get_loc));
+$coo2 = substr_replace($coo[6], '#', 8, 0);
+$coo3 = (explode('#', $coo2));
+
+//myErr($coo);
+//myErr($coo2);
+//myErr($coo3);
+
+$lng = preg_match_all('!\d+!', $coo3[1], $matches);
+//myErr($matches);
+
+foreach($matches as $k => $v){
+ // myErr($v);
+}
+
+$lng = implode('.', $v);
+
+$lat = $coo3[0];
+
+// echo $lat;
+// echo $lng;

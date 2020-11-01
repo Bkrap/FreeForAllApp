@@ -187,6 +187,7 @@
         <div class="modal-body mb-0 p-0">
             <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
                <p class="opis"> <?php echo get_loc(); ?></p>
+               <button name="btn-map">Show me on a map</button>
             </div>
         </div>
         </div>
