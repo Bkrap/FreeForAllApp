@@ -8,6 +8,23 @@
 
 }
 
+#googleMap {
+  position: relative;
+  z-index: 1;
+}
+
+#googleMap > #googleMap::before {
+  content: '';
+  position: absolute;
+  z-index: 999;
+  background-color: red;
+  height: 100%;
+  width: 30%;
+
+  transform: translateY(-50%);
+}
+
+
 .embed-responsive {
   padding: 0;
 }
